@@ -28,6 +28,25 @@ const theme = createTheme({
     phone: 0,
     tablet: 768,
   },
+  textVariants: {
+    header: {
+      fontWeight: "bold",
+      fontSize: 34,
+      lineHeight: 42.5,
+      color: "black",
+    },
+    subheader: {
+      fontWeight: "600",
+      fontSize: 28,
+      lineHeight: 36,
+      color: "black",
+    },
+    body: {
+      fontSize: 16,
+      lineHeight: 24,
+      color: "black",
+    },
+  },
 });
 
 export type Theme = typeof theme;
