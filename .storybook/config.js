@@ -1,3 +1,4 @@
+import React from "react";
 import { configure, addDecorator } from "@storybook/react";
 import { ThemeProvider } from "@shopify/restyle";
 import theme from "../themes/default";
