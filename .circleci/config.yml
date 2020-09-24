@@ -25,5 +25,10 @@ workflows:
     jobs:
       - test_node_10
       - release:
+          filters:
+            branches:
+              only:
+                - master
+                - beta
           requires:
             - test_node_10
