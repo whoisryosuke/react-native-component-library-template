@@ -124,6 +124,7 @@
       {
         "path": "@semantic-release/git",
         "assets": [
+          "dist/**/*.{js,ts}",
           "package.json",
           "package-lock.json",
           "CHANGELOG.md"
