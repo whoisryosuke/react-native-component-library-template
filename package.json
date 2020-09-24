@@ -14,7 +14,8 @@
     "build-storybook": "build-storybook",
     "test:unit": "jest",
     "lint": "eslint",
-    "format": "prettier *.{js,tsx} -w"
+    "format": "prettier *.{js,tsx} -w",
+    "prepare": "bob build"
   },
   "dependencies": {
     "@shopify/restyle": "^1.3.0",
@@ -57,6 +58,33 @@
     ],
     "setupFilesAfterEnv": [
       "<rootDir>/__mocks__/globalMock.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/"
     ]
-  }
+  },
+  "main": "dist/commonjs/index.js",
+  "react-native": "components/index.ts",
+  "module": "dist/module/index.js",
+  "types": "dist/typescript/components/index.d.ts",
+  "files": [
+    "components",
+    "dist",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "@react-native-community/bob": {
+    "source": "components",
+    "output": "dist",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/"
+  ]
 }
