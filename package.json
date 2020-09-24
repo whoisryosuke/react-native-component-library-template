@@ -1,4 +1,13 @@
 {
+  "name": "restyle-ui",
+  "description": "React Native component library using Shopify's Restyle",
+  "keywords": [
+    "components",
+    "react-native-components",
+    "restyle",
+    "styled-system",
+    "ui"
+  ],
   "scripts": {
     "start": "expo start",
     "web": "start-storybook -p 6006",
