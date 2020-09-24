@@ -173,114 +173,18 @@ exports[`<App /> renders correctly 1`] = `
                           "prevMountedDecorators": Set {},
                           "renderListener": [Function],
                         },
-                        "id": "button--text",
-                        "kind": "Button",
-                        "name": "Text",
+                        "id": "text--basic",
+                        "kind": "Text",
+                        "name": "Basic",
                         "parameters": Object {
-                          "fileName": "/Users/ryo/Development/Design Systems/expo-storybook/stories/1-Button.stories.js",
+                          "fileName": "/Users/ryo/Development/Design Systems/restyle-ui/components/Text/Text.stories.tsx",
                           "framework": "react-native",
                         },
-                        "story": "Text",
+                        "story": "Basic",
                         "storyFn": [Function],
                       },
                     ],
-                    "title": "Button",
-                  },
-                  Object {
-                    "data": Array [
-                      Object {
-                        "getDecorated": [Function],
-                        "getOriginal": [Function],
-                        "hooks": HooksContext {
-                          "currentContext": null,
-                          "currentDecoratorName": null,
-                          "currentEffects": Array [],
-                          "currentHooks": Array [],
-                          "currentPhase": "NONE",
-                          "hasUpdates": false,
-                          "hookListsMap": WeakMap {},
-                          "mountedDecorators": Set {},
-                          "nextHookIndex": 0,
-                          "prevEffects": Array [],
-                          "prevMountedDecorators": Set {},
-                          "renderListener": [Function],
-                        },
-                        "id": "constants--constants",
-                        "kind": "Constants",
-                        "name": "Constants",
-                        "parameters": Object {
-                          "fileName": "/Users/ryo/Development/Design Systems/expo-storybook/stories/2-Constants.stories.js",
-                          "framework": "react-native",
-                        },
-                        "story": "Constants",
-                        "storyFn": [Function],
-                      },
-                    ],
-                    "title": "Constants",
-                  },
-                  Object {
-                    "data": Array [
-                      Object {
-                        "getDecorated": [Function],
-                        "getOriginal": [Function],
-                        "hooks": HooksContext {
-                          "currentContext": null,
-                          "currentDecoratorName": null,
-                          "currentEffects": Array [],
-                          "currentHooks": Array [],
-                          "currentPhase": "NONE",
-                          "hasUpdates": false,
-                          "hookListsMap": WeakMap {},
-                          "mountedDecorators": Set {},
-                          "nextHookIndex": 0,
-                          "prevEffects": Array [],
-                          "prevMountedDecorators": Set {},
-                          "renderListener": [Function],
-                        },
-                        "id": "lineargradient--linear-gradient",
-                        "kind": "LinearGradient",
-                        "name": "Linear Gradient",
-                        "parameters": Object {
-                          "fileName": "/Users/ryo/Development/Design Systems/expo-storybook/stories/3-LinearGradient.stories.js",
-                          "framework": "react-native",
-                        },
-                        "story": "Linear Gradient",
-                        "storyFn": [Function],
-                      },
-                    ],
-                    "title": "LinearGradient",
-                  },
-                  Object {
-                    "data": Array [
-                      Object {
-                        "getDecorated": [Function],
-                        "getOriginal": [Function],
-                        "hooks": HooksContext {
-                          "currentContext": null,
-                          "currentDecoratorName": null,
-                          "currentEffects": Array [],
-                          "currentHooks": Array [],
-                          "currentPhase": "NONE",
-                          "hasUpdates": false,
-                          "hookListsMap": WeakMap {},
-                          "mountedDecorators": Set {},
-                          "nextHookIndex": 0,
-                          "prevEffects": Array [],
-                          "prevMountedDecorators": Set {},
-                          "renderListener": [Function],
-                        },
-                        "id": "font--font",
-                        "kind": "Font",
-                        "name": "Font",
-                        "parameters": Object {
-                          "fileName": "/Users/ryo/Development/Design Systems/expo-storybook/stories/4-Font.stories.js",
-                          "framework": "react-native",
-                        },
-                        "story": "Font",
-                        "storyFn": [Function],
-                      },
-                    ],
-                    "title": "Font",
+                    "title": "Text",
                   },
                 ]
               }
@@ -334,43 +238,6 @@ exports[`<App /> renders correctly 1`] = `
                         }
                       }
                     >
-                      Button
-                    </Text>
-                  </View>
-                </View>
-                <View
-                  onLayout={[Function]}
-                  style={null}
-                >
-                  <View
-                    accessibilityLabel="Storybook.ListItem.Text"
-                    accessible={true}
-                    focusable={true}
-                    onClick={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      Object {
-                        "opacity": 1,
-                        "paddingHorizontal": 16,
-                        "paddingVertical": 5,
-                      }
-                    }
-                    testID="Storybook.ListItem.Button.Text"
-                  >
-                    <Text
-                      selected={null}
-                      style={
-                        Object {
-                          "color": "black",
-                          "fontSize": 16,
-                        }
-                      }
-                    >
                       Text
                     </Text>
                   </View>
@@ -378,37 +245,9 @@ exports[`<App /> renders correctly 1`] = `
                 <View
                   onLayout={[Function]}
                   style={null}
-                />
-                <View
-                  onLayout={[Function]}
-                  style={null}
                 >
                   <View
-                    style={
-                      Object {
-                        "paddingVertical": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      selected={null}
-                      style={
-                        Object {
-                          "color": "black",
-                          "fontSize": 20,
-                        }
-                      }
-                    >
-                      Constants
-                    </Text>
-                  </View>
-                </View>
-                <View
-                  onLayout={[Function]}
-                  style={null}
-                >
-                  <View
-                    accessibilityLabel="Storybook.ListItem.Constants"
+                    accessibilityLabel="Storybook.ListItem.Basic"
                     accessible={true}
                     focusable={true}
                     onClick={[Function]}
@@ -425,7 +264,7 @@ exports[`<App /> renders correctly 1`] = `
                         "paddingVertical": 5,
                       }
                     }
-                    testID="Storybook.ListItem.Constants.Constants"
+                    testID="Storybook.ListItem.Text.Basic"
                   >
                     <Text
                       selected={null}
@@ -436,7 +275,7 @@ exports[`<App /> renders correctly 1`] = `
                         }
                       }
                     >
-                      Constants
+                      Basic
                     </Text>
                   </View>
                 </View>
@@ -444,95 +283,6 @@ exports[`<App /> renders correctly 1`] = `
                   onLayout={[Function]}
                   style={null}
                 />
-                <View
-                  onLayout={[Function]}
-                  style={null}
-                >
-                  <View
-                    style={
-                      Object {
-                        "paddingVertical": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      selected={null}
-                      style={
-                        Object {
-                          "color": "black",
-                          "fontSize": 20,
-                        }
-                      }
-                    >
-                      LinearGradient
-                    </Text>
-                  </View>
-                </View>
-                <View
-                  onLayout={[Function]}
-                  style={null}
-                >
-                  <View
-                    accessibilityLabel="Storybook.ListItem.Linear Gradient"
-                    accessible={true}
-                    focusable={true}
-                    onClick={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      Object {
-                        "opacity": 1,
-                        "paddingHorizontal": 16,
-                        "paddingVertical": 5,
-                      }
-                    }
-                    testID="Storybook.ListItem.LinearGradient.Linear Gradient"
-                  >
-                    <Text
-                      selected={null}
-                      style={
-                        Object {
-                          "color": "black",
-                          "fontSize": 16,
-                        }
-                      }
-                    >
-                      Linear Gradient
-                    </Text>
-                  </View>
-                </View>
-                <View
-                  onLayout={[Function]}
-                  style={null}
-                />
-                <View
-                  onLayout={[Function]}
-                  style={null}
-                >
-                  <View
-                    style={
-                      Object {
-                        "paddingVertical": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      selected={null}
-                      style={
-                        Object {
-                          "color": "black",
-                          "fontSize": 20,
-                        }
-                      }
-                    >
-                      Font
-                    </Text>
-                  </View>
-                </View>
                 <View
                   style={
                     Object {
