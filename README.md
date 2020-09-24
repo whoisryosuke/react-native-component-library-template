@@ -47,6 +47,51 @@ Storybook with Expo CLI
 └── babel.config.js ➡️ Babel config (should be using `babel-preset-expo`)
 ```
 
+### Adding Storybook Stories
+
+1. Create a file alongside your component named `ComponentName.stories.tsx`.
+2. We use CSF story format (lets us export stories to test in other context):
+
+```js
+import React from "react";
+import { storiesOf } from "@storybook/react-native";
+// Import your component
+import Text from "./Text";
+
+// Define your component and it's name
+export default {
+  title: "Text",
+  component: Text,
+};
+
+// Stories
+export const Basic = () => <Text>What's up</Text>;
+export const Colored = () => <Text color="red">What's up</Text>;
+
+// This is necessary to make it show in Expo
+// Add all stories to RN/Expo storybook
+storiesOf("Text", module).add("Basic", Basic).add("Colored", Colored);
+```
+
+3. You should be able to see it in Storybook web if you spin it up `expo web`. But to see it native, you need to import the story directly in `stories/index.js`.
+
+Done! You should see your new component stories in Storybook web and native.
+
+### Semantic Release
+
+This project is setup with semantic-release to automatically handle versioning based on git commits and branching. It also is setup with Commitzen's CLI (`yarn commit`), which walks you through crafting a "conventional commit".
+
+1. Create a branch for your work: `git checkout -b name-here`
+1. Do some cool code jutsu.
+1. `git add` your changed files.
+1. `yarn commit` to run the CLI
+
+You'll be able to pick from things like a feature, bug fix, or CI update. And add your commit message, as well as a longer detailed message.
+
+After creating this branch, create a pull request (PR) on Github. Once approved, it will be moved to a release branch (like `next`), and eventually merged into master.
+
+When merged into master, the CI (CircleCI in our case) will run semantic-release, which checks commits since last release.
+
 ## 📝 Notes
 
 - [Storybook React Native](https://storybook.js.org/docs/guides/guide-react-native/)
