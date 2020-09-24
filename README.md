@@ -1,4 +1,4 @@
-# Storybook Example
+# Restyle UI
 
 <p>
   <!-- iOS -->
@@ -11,9 +11,17 @@
 
 <img alt="expo examples" src="https://i.imgur.com/j253BeR.png">
 
-You can use Storybook to test and share your component library quickly and easily! This example shows how to use Expo modules with Storybook CLI and Expo CLI.
+React Native component library built with Shopify's Restyle library to allow for **theming** and **utility style props**.
 
-> This is setup as Storybook with Expo, instead of Expo with Storybook. This means that it's a dedicated RN app for Storybook, instead of attaching a Storybook instance to your current app (if you have one). If you have a pre-existing app setup with Expo, you could setup Storybook in the same project. This is setup to be separate, for something like a design system.
+```
+<Box backgroundColor="primary" mt={2} p={3}>
+  <Text color="textInverted" fontFamily="Roboto, sans-serif">
+    Branded box with white text inside
+  </Text>
+</Box>
+```
+
+> This is setup as Storybook with Expo, instead of Expo with Storybook.
 
 ## Getting Started
 
