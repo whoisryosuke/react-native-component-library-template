@@ -1,13 +1,5 @@
 version: 2
 jobs:
-  test_node_10:
-    docker:
-      - image: circleci/node:10
-    steps:
-      - checkout
-      - run: yarn install --frozen-lockfile
-      - run: yarn run test:unit -u
-
   lint:
     docker:
       - image: circleci/node:10
@@ -16,6 +8,14 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn run lint
       - run: yarn run format
+
+  test_node_10:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: yarn install --frozen-lockfile
+      - run: yarn run test:unit -u
 
   release:
     docker:
@@ -33,7 +33,7 @@ workflows:
     # Run the test jobs first, then the release only when all the test jobs are successful
     jobs:
       - lint
-      - test_node_10
+      - test_node_10:
           requires:
             - lint
       - release:
