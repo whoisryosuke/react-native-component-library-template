@@ -7,4 +7,4 @@ import theme from "../themes/default";
 addDecorator((story) => <ThemeProvider theme={theme}>{story()}</ThemeProvider>);
 
 // automatically import all files ending in *.stories.js
-configure(require.context("../stories", true, /\.stories\.js$/), module);
+configure(require.context("../components", true, /\.stories\.[tj]sx$/), module);
